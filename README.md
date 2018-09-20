@@ -5,7 +5,7 @@
 REST-ADMIN is trying to make it easier to built an admin dashboard for any backend services. All you need to do is just provide a RESTful api for it.
 
 ## Online Demo
-#### http://rest-admin.genyii.com/admin/ 
+#### http://rest-admin.genyii.com/admin/
 > username:password `admin:admin`
 
 ## Screenshots
@@ -27,7 +27,7 @@ REST-ADMIN is trying to make it easier to built an admin dashboard for any backe
 
 ## Quick Start
 ```bash
-git clone https://github.com/typescript59/restAdmin.git
+git clone https://github.com/crocohs/Vue_Bootstrap_Rest.git
 cd restAdmin
 code . # open with vscode [optional]
 npm i # or cnpm i
@@ -70,9 +70,9 @@ Example:
   "body": { "type": "html", "group": "Detail" },
   "steps": { "type": "array", "group": "Steps", "fields": {
     "name": { "label": "Name" },
-    "date": { "label": "date" } 
+    "date": { "label": "date" }
   }},
-  
+
   "_actions": { // define table view, it's optional.
     "buttons": { // define buttons as `false` to hide in actions colum
       "delete": false,
@@ -97,9 +97,9 @@ Example:
   - `select2` [vue-select](https://github.com/sagalbot/vue-select), like `select2` in jQuery
     - `options` e.g. `[{ "text": "Label", "value": "1" }]`
   - `tree` [vue-treeselect](https://vue-treeselect.js.org/)
-    - `options` **use `text` and `value` instead `label` and `id`** e.g. `[{ "text": "Label", "value": "1", "children": [ { "text": "Item1", "value": "2" } ] }]`  
+    - `options` **use `text` and `value` instead `label` and `id`** e.g. `[{ "text": "Label", "value": "1", "children": [ { "text": "Item1", "value": "2" } ] }]`
   - `date` [vue2-datepicker](https://github.com/mengxiong10/vue2-datepicker) supports **date range**
-  - `switch` A iOS-liked switch component 
+  - `switch` A iOS-liked switch component
   - `html` An WYSIWYG html editor from [vue-html5-editor](https://github.com/PeakTai/vue-html5-editor)
   - `array` Array values
     - `fields` child fields defination
@@ -153,7 +153,7 @@ Get config data of site
         "name": "Posts",
         "url": "/rest/posts",
         "icon": "fa fa-list",
-        // url format of resource list: /rest/:resourceName      
+        // url format of resource list: /rest/:resourceName
       },
       {
         "name": "Config",
@@ -320,7 +320,7 @@ There are two apis for a custom form:
     {
       "title": "Form Title",
       "fields": {
-        ...see Fields Definition...        
+        ...see Fields Definition...
       }
     }
     ```
